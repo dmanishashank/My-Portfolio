@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of D Mani Shashank - Computer Science & Data Science Engineering Student, Technology & AI Enthusiast.">
+    <meta name="author" content="D Mani Shashank">
+    <title>D Mani Shashank | Software Engineer Portfolio</title>
+
+    <!-- Google Fonts: Pixel Art Fonts (Press Start 2P, Silkscreen) + Modern Body Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Pixel Art Stylesheet & Theme System -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       VERTICAL NAVIGATION BAR (LEFT SIDEBAR - PIXEL ART AESTHETIC)
+       Placed on the left side of the screen. Includes links for Home, About Me,
+       Skills, Timeline, Projects, Testimonials, Chat, and Contact.
+       ========================================================================== -->
+    <aside class="vertical-navbar" id="vertical-nav" aria-label="Primary Navigation">
+        <div class="vnav-content">
+            <!-- Sidebar Header & Player Status -->
+            <div class="vnav-header">
+                <a href="#hero" class="vnav-brand" aria-label="Go to Home section">
+                    <span class="vnav-brand-icon">&lt;/&gt;</span>
+                    <div class="vnav-brand-title">
+                        <span class="vnav-brand-name">SHASHANK</span>
+                        <span class="vnav-brand-status">
+                            <span class="vnav-status-led" aria-hidden="true"></span> ONLINE
+                        </span>
+                    </div>
+                </a>
+                <button 
+                    type="button" 
+                    class="vnav-close-btn" 
+                    id="vnav-close-btn" 
+                    aria-label="Close navigation menu"
+                >
+                    &times;
+                </button>
+            </div>
+
+            <!-- Vertical Navigation Menu Links (8 Items) -->
+            <ul class="vnav-menu" role="list">
+                <li class="vnav-item">
+                    <a href="#hero" class="vnav-link active" data-section="hero" aria-current="page">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">🏠</span>
+                        <span class="vnav-text">Home</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#about" class="vnav-link" data-section="about">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">👤</span>
+                        <span class="vnav-text">About Me</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#skills" class="vnav-link" data-section="skills">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">⚔️</span>
+                        <span class="vnav-text">Skills</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#timeline" class="vnav-link" data-section="timeline">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">⏳</span>
+                        <span class="vnav-text">Timeline</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#projects" class="vnav-link" data-section="projects">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">🕹️</span>
+                        <span class="vnav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#video" class="vnav-link" data-section="video">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">📺</span>
+                        <span class="vnav-text">Video</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#testimonials" class="vnav-link" data-section="testimonials">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">💬</span>
+                        <span class="vnav-text">Testimonials</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#chat" class="vnav-link" data-section="chat">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">🤖</span>
+                        <span class="vnav-text">Chat</span>
+                    </a>
+                </li>
+                <li class="vnav-item">
+                    <a href="#contact" class="vnav-link" data-section="contact">
+                        <span class="vnav-cursor" aria-hidden="true">▶</span>
+                        <span class="vnav-icon" aria-hidden="true">✉️</span>
+                        <span class="vnav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Sidebar Bottom System HUD -->
+            <div class="vnav-footer">
+                <div class="vnav-stats">
+                    <span>LVL 01 CS/DS</span>
+                    <span>DMS_OS v1.0</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Backdrop Overlay -->
+    <div class="vnav-backdrop" id="vnav-backdrop" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+       MAIN PAGE WRAPPER
+       Offsets content to the right on desktop to accommodate vertical navbar
+       ========================================================================== -->
+    <div class="page-wrapper" id="page-wrapper">
+
+        <!-- ======================================================================
+           TOP UTILITY / MOBILE HEADER
+           ====================================================================== -->
+        <header class="site-header" id="header">
+            <nav class="nav-container" aria-label="Top Utility Bar">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <!-- Mobile Hamburger Button to Toggle Vertical Navbar -->
+                    <button 
+                        type="button" 
+                        id="mobile-nav-toggle" 
+                        class="mobile-nav-toggle pixel-btn" 
+                        aria-label="Open navigation menu" 
+                        aria-expanded="false" 
+                        aria-controls="vertical-nav"
+                    >
+                        ☰ MENU
+                    </button>
+
+                    <!-- Brand / Logo -->
+                    <a href="#hero" class="brand-logo" aria-label="Back to top">
+                        <span class="brand-icon">&lt;/&gt;</span>
+                        <span class="logo-text">SHASHANK.DEV</span>
+                    </a>
+                </div>
+
+                <!-- Actions / Night Mode Toggle -->
+                <div class="nav-actions">
+                    <div class="theme-toggle-wrapper">
+                        <button 
+                            type="button" 
+                            id="theme-toggle" 
+                            class="theme-toggle-btn" 
+                            aria-label="Toggle night mode" 
+                            title="Theme auto-detected via browser preferences (Click to toggle)"
+                            aria-pressed="false"
+                        >
+                            <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+                            <span class="theme-text" id="theme-text">NIGHT</span>
+                        </button>
+                    </div>
+
+                    <a href="D_Mani_Shashank.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-accent" style="font-size: 0.55rem; padding: 0.4rem 0.65rem;">
+                        RESUME
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ======================================================================
+           MAIN CONTENT
+           Houses all primary portfolio sections
+           ====================================================================== -->
+        <main id="main-content">
+
+        <!-- ======================================================================
+           1. HERO SECTION (Pixel Art Style)
+           Features background image, CRT scanlines, pixel art dialogue card,
+           dynamic title & tagline, and retro character status HUD
+           ====================================================================== -->
+        <section id="hero" class="section hero-section" aria-labelledby="hero-heading">
+            <div class="container hero-container">
+                <!-- Left: Hero Introduction Dialogue Box -->
+                <div class="hero-content">
+                    <!-- Retro Player Status Pill -->
+                    <div class="hero-status-pill">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span class="status-text">PLAYER 1 READY &bull; LEVEL 1 DEVELOPER</span>
+                    </div>
+
+                    <div class="hero-dialog-box pixel-box">
+                        <p class="hero-greeting">
+                            <span aria-hidden="true">👾</span> WELCOME VISITOR!
+                        </p>
+                        <h1 id="hero-heading" class="hero-title">
+                            I'M <span class="title-accent">D MANI SHASHANK</span><span class="blinking-cursor" aria-hidden="true">_</span>
+                        </h1>
+                        <div class="hero-role-badge">
+                            Engineering Student | Technology &amp; AI Enthusiast
+                        </div>
+                        <p class="hero-subtitle">
+                            Crafting intelligent software, embedded systems, and scalable algorithms pixel by pixel. Welcome to my digital realm.
+                        </p>
+                    </div>
+                    
+                    <!-- Retro Action Button Row -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="pixel-btn pixel-btn-primary">
+                            <span aria-hidden="true">▶</span> START QUEST
+                        </a>
+                        <a href="#skills" class="pixel-btn pixel-btn-secondary">
+                            <span aria-hidden="true">⚔</span> VIEW SKILLS
+                        </a>
+                        <a href="D_Mani_Shashank.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-accent">
+                            <span aria-hidden="true">📜</span> RESUME
+                        </a>
+                        <a href="#contact" class="pixel-btn pixel-btn-outline">
+                            <span aria-hidden="true">✉</span> CONTACT
+                        </a>
+                    </div>
+
+                    <!-- Quick Specs / Tech Stats Footer -->
+                    <div class="hero-quick-stats">
+                        <div class="quick-stat-item">
+                            <span class="quick-stat-icon">🎓</span>
+                            <span>B.E. CSE (Data Science)</span>
+                        </div>
+                        <div class="quick-stat-item">
+                            <span class="quick-stat-icon">💻</span>
+                            <span>Python &bull; C &bull; Java &bull; SQL</span>
+                        </div>
+                        <div class="quick-stat-item">
+                            <span class="quick-stat-icon">🤖</span>
+                            <span>IoT &bull; Arduino &bull; AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Retro 8-bit Character Status Card -->
+                <div class="hero-visual">
+                    <aside class="character-card pixel-box" aria-label="Character Profile HUD">
+                        <div class="character-card-header">
+                            <span class="character-card-title">CHARACTER PROFILE</span>
+                            <span class="character-level-badge">LVL 01</span>
+                        </div>
+
+                        <!-- Portrait Frame with user-provided portrait photo -->
+                        <div class="avatar-frame">
+                            <img 
+                                src="./WhatsApp Image 2026-10-07 at 9.51.01 AM.jpeg" 
+                                alt="D Mani Shashank Portrait" 
+                                class="avatar-image"
+                                loading="eager"
+                            >
+                        </div>
+
+                        <!-- 8-Bit RPG Stat Meters -->
+                        <div class="character-stats">
+                            <div class="stat-row">
+                                <div class="stat-header">
+                                    <span>HP [HEALTH]</span>
+                                    <span>100 / 100</span>
+                                </div>
+                                <div class="stat-bar-outer" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="stat-bar-inner hp"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-header">
+                                    <span>MP [MANA / LOGIC]</span>
+                                    <span>99 / 99</span>
+                                </div>
+                                <div class="stat-bar-outer" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="stat-bar-inner mp"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-header">
+                                    <span>EXP [ACADEMIC JOURNEY]</span>
+                                    <span>2025 - 2029</span>
+                                </div>
+                                <div class="stat-bar-outer" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="stat-bar-inner exp"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Equipped Skills Pills -->
+                        <div class="character-skills-pills" aria-label="Equipped Skills">
+                            <span class="pixel-pill">AI &amp; DATA SCIENCE</span>
+                            <span class="pixel-pill">EMBEDDED C</span>
+                            <span class="pixel-pill">ARDUINO</span>
+                            <span class="pixel-pill">FULL-STACK</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           2. ABOUT ME SECTION (Clean, Minimalistic & Pixel Art Accents)
+           Profile image, short bio, career highlights, and personal interests
+           ====================================================================== -->
+        <section id="about" class="section about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="about-heading" class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know my journey, engineering philosophy, and personal interests</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Profile Avatar Card (Pixel Art Avatar + Real Photo Toggle) -->
+                    <aside class="about-avatar-card pixel-box" aria-label="Profile Card">
+                        <!-- Profile Image Frame -->
+                        <div class="about-avatar-frame">
+                            <img 
+                                id="about-profile-img" 
+                                src="./pixel_avatar.jpg" 
+                                alt="D Mani Shashank Pixel Art Avatar" 
+                                class="about-avatar-img"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <!-- Image Mode Switcher (8-Bit Pixel Avatar vs Real Photo) -->
+                        <div class="avatar-switcher" role="group" aria-label="Avatar view switcher">
+                            <button 
+                                type="button" 
+                                class="avatar-switch-btn active" 
+                                id="btn-pixel-avatar" 
+                                aria-pressed="true"
+                            >
+                                👾 8-BIT
+                            </button>
+                            <button 
+                                type="button" 
+                                class="avatar-switch-btn" 
+                                id="btn-photo-avatar" 
+                                aria-pressed="false"
+                            >
+                                📷 PHOTO
+                            </button>
+                        </div>
+
+                        <!-- Player Identity Meta -->
+                        <div class="about-player-info">
+                            <h3 class="about-player-name">D MANI SHASHANK</h3>
+                            <p class="about-player-title">CS &amp; Data Science Engineer</p>
+                            
+                            <div class="about-status-badge">
+                                <span class="vnav-status-led" aria-hidden="true"></span>
+                                <span>OPEN TO OPPORTUNITIES</span>
+                            </div>
+
+                            <p class="about-player-meta">
+                                <span>📍 Chikkamagaluru, India</span>
+                            </p>
+                        </div>
+                    </aside>
+
+                    <!-- Right: Bio Narrative, Career Highlights & Personal Interests -->
+                    <div class="about-bio-content">
+                        <!-- Bio Narrative Box -->
+                        <article class="about-narrative">
+                            <h3 class="about-section-heading">
+                                <span aria-hidden="true">🕹️</span> Who I Am
+                            </h3>
+                            <p class="about-lead-text">
+                                Hi there! I'm <strong>D Mani Shashank</strong>, a Computer Science &amp; Engineering student specializing in <strong>Data Science</strong> at Adichunchanagiri Institute of Technology. I am driven by the passion to solve problems where software architecture meets intelligent systems and real-world hardware.
+                            </p>
+                            <p class="about-paragraph">
+                                My technical foundation spans algorithmic problem solving in <strong>Python, C, and Java</strong>, relational data architecture in <strong>SQL</strong>, and physical computing with <strong>Arduino and Embedded C</strong>. I focus on writing clean, well-tested code that scales gracefully from prototypes to high-performance systems.
+                            </p>
+                            <p class="about-paragraph">
+                                Whether building IoT sensor safety alerts or delving into modern predictive algorithms, I value modular design, continuous learning, and creating impactful technology with precision.
+                            </p>
+                        </article>
+
+                        <!-- Career & Academic Highlights -->
+                        <div class="about-highlights-section">
+                            <h3 class="about-section-heading">
+                                <span aria-hidden="true">⭐</span> Career &amp; Academic Highlights
+                            </h3>
+                            <div class="about-highlights-grid">
+                                <!-- Highlight 1: Education -->
+                                <div class="highlight-card">
+                                    <div class="highlight-icon" aria-hidden="true">🎓</div>
+                                    <div class="highlight-body">
+                                        <h4 class="highlight-title">B.E. CSE (Data Science)</h4>
+                                        <p class="highlight-desc">Adichunchanagiri Institute of Technology (2025–2029). Focus on Data Science, DSA &amp; Systems.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Highlight 2: Project -->
+                                <div class="highlight-card">
+                                    <div class="highlight-icon" aria-hidden="true">🌧️</div>
+                                    <div class="highlight-body">
+                                        <h4 class="highlight-title">Embedded Systems IoT</h4>
+                                        <p class="highlight-desc">Engineered an automated Rain Water Detection system with Arduino, buzzers, and Embedded C.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Highlight 3: Certifications -->
+                                <div class="highlight-card">
+                                    <div class="highlight-icon" aria-hidden="true">📜</div>
+                                    <div class="highlight-body">
+                                        <h4 class="highlight-title">Certified Competency</h4>
+                                        <p class="highlight-desc">Completed NPTEL certification in Python for Data Science and accredited C Programming courses.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Highlight 4: Core Strengths -->
+                                <div class="highlight-card">
+                                    <div class="highlight-icon" aria-hidden="true">⚡</div>
+                                    <div class="highlight-body">
+                                        <h4 class="highlight-title">Computer Science Core</h4>
+                                        <p class="highlight-desc">Solid mastery in Data Structures, Algorithms, Operating Systems, OOP, and SQL databases.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personal Interests -->
+                        <div class="about-interests-box">
+                            <h3 class="about-section-heading">
+                                <span aria-hidden="true">💡</span> Personal Interests &amp; Passions
+                            </h3>
+                            <ul class="interests-tags-list" role="list">
+                                <li class="interest-tag">🤖 Artificial Intelligence &amp; Data Science</li>
+                                <li class="interest-tag">🔌 Microcontrollers &amp; IoT Hardware</li>
+                                <li class="interest-tag">🕹️ Retro Gaming &amp; Pixel Art Aesthetics</li>
+                                <li class="interest-tag">🧩 Algorithmic Problem Solving</li>
+                                <li class="interest-tag">🌐 Open-Source Collaboration</li>
+                                <li class="interest-tag">📚 Continuous Tech Learning</li>
+                            </ul>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="about-actions-row">
+                            <a href="D_Mani_Shashank.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-primary">
+                                <span aria-hidden="true">📜</span> VIEW FULL RESUME
+                            </a>
+                            <a href="#projects" class="pixel-btn pixel-btn-secondary">
+                                <span aria-hidden="true">▶</span> EXPLORE PROJECTS
+                            </a>
+                            <a href="#contact" class="pixel-btn pixel-btn-outline">
+                                <span aria-hidden="true">✉</span> GET IN TOUCH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           3. SKILLS SECTION (Interactive Pixel Art Layout & Retro Progress Bars)
+           Core competencies: Programming languages, Embedded/IoT, CS core, & Tools.
+           Includes pixel progress bars, icons, styled lists, and explanatory comments.
+           ====================================================================== -->
+        <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Core competencies, embedded hardware mastery, and developer toolchains</p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <nav class="skills-filter-nav" aria-label="Skills category filter">
+                    <button type="button" class="skills-filter-btn active" data-filter="all" aria-pressed="true">
+                        ★ ALL COMPETENCIES
+                    </button>
+                    <button type="button" class="skills-filter-btn" data-filter="languages" aria-pressed="false">
+                        💻 LANGUAGES
+                    </button>
+                    <button type="button" class="skills-filter-btn" data-filter="hardware" aria-pressed="false">
+                        🔌 EMBEDDED &amp; IoT
+                    </button>
+                    <button type="button" class="skills-filter-btn" data-filter="core" aria-pressed="false">
+                        ⚡ CS FOUNDATIONS
+                    </button>
+                    <button type="button" class="skills-filter-btn" data-filter="tools" aria-pressed="false">
+                        🛠️ DEV TOOLS
+                    </button>
+                </nav>
+
+                <!-- Retro Skill Overview HUD Banner -->
+                <aside class="skills-overview-hud pixel-box" aria-label="Skill Proficiency Summary">
+                    <div class="hud-stat-item">
+                        <span class="hud-icon" aria-hidden="true">🎯</span>
+                        <div class="hud-details">
+                            <span class="hud-label">OVERALL PROFICIENCY</span>
+                            <span class="hud-value">LEVEL 1 SCHOLAR (88% AVG)</span>
+                        </div>
+                    </div>
+
+                    <div class="hud-stat-item">
+                        <span class="hud-icon" aria-hidden="true">⚙️</span>
+                        <div class="hud-details">
+                            <span class="hud-label">PRIMARY ARSENAL</span>
+                            <span class="hud-value">PYTHON &bull; EMBEDDED C &bull; JAVA &bull; SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="hud-stat-item">
+                        <span class="hud-icon" aria-hidden="true">📜</span>
+                        <div class="hud-details">
+                            <span class="hud-label">VERIFIED HONORS</span>
+                            <span class="hud-value">NPTEL DATA SCIENCE &bull; C ACCREDITED</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Categorized Skills Grid -->
+                <div class="skills-categories-grid">
+
+                    <!-- ==========================================================
+                       CATEGORY 1: PROGRAMMING LANGUAGES
+                       Core languages used for scripting, data science, and systems
+                       ========================================================== -->
+                    <div class="skills-category-card" data-category="languages">
+                        <div class="category-card-header">
+                            <div class="category-header-title">
+                                <span class="category-header-icon" aria-hidden="true">💻</span>
+                                <h3 class="category-title">Languages</h3>
+                            </div>
+                            <span class="category-badge-pill">5 SKILLS</span>
+                        </div>
+
+                        <ul class="skills-items-list" role="list">
+                            <!-- Skill Element: Python - Represents primary language for Data Science, certified via NPTEL -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🐍</span>
+                                        <h4 class="skill-item-name">Python</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">NPTEL CERTIFIED</span>
+                                        <span class="skill-item-percent">92%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Python Proficiency 92%">
+                                    <div class="skill-bar-fill fill-green" style="width: 92%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Data wrangling, algorithmic automation, machine learning packages, and accredited via NPTEL.</p>
+                            </li>
+
+                            <!-- Skill Element: C - Low-level systems programming, memory control, and embedded foundations -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">⚙️</span>
+                                        <h4 class="skill-item-name">C Programming</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">CERTIFIED</span>
+                                        <span class="skill-item-percent">88%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming Proficiency 88%">
+                                    <div class="skill-bar-fill fill-blue" style="width: 88%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Direct memory management, pointers, dynamic memory structures, and hardware interface logic.</p>
+                            </li>
+
+                            <!-- Skill Element: Java - Object-Oriented principles, backend robustness, and class architectures -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">☕</span>
+                                        <h4 class="skill-item-name">Java</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">OOP CORE</span>
+                                        <span class="skill-item-percent">82%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Java Proficiency 82%">
+                                    <div class="skill-bar-fill fill-orange" style="width: 82%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Object-oriented modeling, polymorphism, Java Collections Framework, and backend design.</p>
+                            </li>
+
+                            <!-- Skill Element: SQL - Relational database querying, normalization, and structured data handling -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🗄️</span>
+                                        <h4 class="skill-item-name">SQL</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">RELATIONAL</span>
+                                        <span class="skill-item-percent">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="SQL Proficiency 85%">
+                                    <div class="skill-bar-fill fill-purple" style="width: 85%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Complex joins, subqueries, relational database normalization (1NF-3NF), and indexing.</p>
+                            </li>
+
+                            <!-- Skill Element: HTML5 & CSS3 - Clean semantic markup, pixel art layouts, and responsive styling -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🌐</span>
+                                        <h4 class="skill-item-name">HTML5 &amp; CSS3</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">UI/UX</span>
+                                        <span class="skill-item-percent">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 & CSS3 Proficiency 85%">
+                                    <div class="skill-bar-fill fill-blue" style="width: 85%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Semantic structure, CSS custom properties, responsive media queries, and retro pixel animations.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ==========================================================
+                       CATEGORY 2: HARDWARE & EMBEDDED IoT
+                       Microcontroller firmware, sensors, and hardware integration
+                       ========================================================== -->
+                    <div class="skills-category-card" data-category="hardware">
+                        <div class="category-card-header">
+                            <div class="category-header-title">
+                                <span class="category-header-icon" aria-hidden="true">🔌</span>
+                                <h3 class="category-title">Embedded &amp; IoT</h3>
+                            </div>
+                            <span class="category-badge-pill">4 SKILLS</span>
+                        </div>
+
+                        <ul class="skills-items-list" role="list">
+                            <!-- Skill Element: Embedded C - Low-level microcontroller programming for IoT projects -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">⚡</span>
+                                        <h4 class="skill-item-name">Embedded C</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">FIRMWARE</span>
+                                        <span class="skill-item-percent">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Embedded C Proficiency 90%">
+                                    <div class="skill-bar-fill fill-green" style="width: 90%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Direct register programming, interrupt service routines, and timing control for hardware boards.</p>
+                            </li>
+
+                            <!-- Skill Element: Arduino - Prototyping microcontroller boards, actuators, and serial interfaces -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🕹️</span>
+                                        <h4 class="skill-item-name">Arduino Architecture</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">HARDWARE</span>
+                                        <span class="skill-item-percent">92%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Arduino Architecture Proficiency 92%">
+                                    <div class="skill-bar-fill fill-blue" style="width: 92%;"></div>
+                                </div>
+                                <p class="skill-item-desc">ATmega microcontroller board programming, PWM control, analog-to-digital reading, and debugging.</p>
+                            </li>
+
+                            <!-- Skill Element: Sensor & Alert Integration - Used in Rain Water Sensor project (Rain board, buzzer, LEDs) -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🌧️</span>
+                                        <h4 class="skill-item-name">Sensor Integration</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">RAIN SENSOR</span>
+                                        <span class="skill-item-percent">88%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Sensor Integration Proficiency 88%">
+                                    <div class="skill-bar-fill fill-orange" style="width: 88%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Connecting rain detection sensors, buzzer alarm circuits, and LED warning indicators in real time.</p>
+                            </li>
+
+                            <!-- Skill Element: Circuit Prototyping - Breadboard assembly, voltage checks, and hardware QA -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🔬</span>
+                                        <h4 class="skill-item-name">Circuit Prototyping</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">LAB TESTED</span>
+                                        <span class="skill-item-percent">82%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Circuit Prototyping Proficiency 82%">
+                                    <div class="skill-bar-fill fill-purple" style="width: 82%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Schematic routing, jumper wiring, pull-up/pull-down resistor setups, and voltage safety testing.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ==========================================================
+                       CATEGORY 3: COMPUTER SCIENCE FUNDAMENTALS
+                       Academic pillars: DSA, Operating Systems, OOP, and DBMS
+                       ========================================================== -->
+                    <div class="skills-category-card" data-category="core">
+                        <div class="category-card-header">
+                            <div class="category-header-title">
+                                <span class="category-header-icon" aria-hidden="true">⚡</span>
+                                <h3 class="category-title">CS Foundations</h3>
+                            </div>
+                            <span class="category-badge-pill">4 SKILLS</span>
+                        </div>
+
+                        <ul class="skills-items-list" role="list">
+                            <!-- Skill Element: Data Structures & Algorithms - Core logic, complexity analysis, and efficiency -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🌲</span>
+                                        <h4 class="skill-item-name">DSA Problem Solving</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">ALGORITHMS</span>
+                                        <span class="skill-item-percent">88%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="DSA Problem Solving Proficiency 88%">
+                                    <div class="skill-bar-fill fill-green" style="width: 88%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Linear &amp; non-linear data structures, Big-O complexity analysis, searching, and sorting algorithms.</p>
+                            </li>
+
+                            <!-- Skill Element: Operating Systems - Process management, memory scheduling, and threads -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🖥️</span>
+                                        <h4 class="skill-item-name">Operating Systems</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">SYSTEMS</span>
+                                        <span class="skill-item-percent">84%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="Operating Systems Proficiency 84%">
+                                    <div class="skill-bar-fill fill-blue" style="width: 84%;"></div>
+                                </div>
+                                <p class="skill-item-desc">CPU scheduling algorithms, process synchronization, deadlocks, and virtual memory paging.</p>
+                            </li>
+
+                            <!-- Skill Element: Object-Oriented Programming - Software engineering abstraction and architecture -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🧱</span>
+                                        <h4 class="skill-item-name">OOP Principles</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">DESIGN</span>
+                                        <span class="skill-item-percent">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="OOP Principles Proficiency 90%">
+                                    <div class="skill-bar-fill fill-orange" style="width: 90%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Encapsulation, inheritance hierarchies, abstract classes, polymorphism, and maintainable design.</p>
+                            </li>
+
+                            <!-- Skill Element: DBMS - Relational modeling, integrity rules, and database engines -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🗃️</span>
+                                        <h4 class="skill-item-name">DBMS Architecture</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">ACID CORE</span>
+                                        <span class="skill-item-percent">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="DBMS Architecture Proficiency 85%">
+                                    <div class="skill-bar-fill fill-purple" style="width: 85%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Relational calculus, schema normal forms, ACID transaction isolation, and storage management.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ==========================================================
+                       CATEGORY 4: DEVELOPER TOOLS & WORKFLOW
+                       Toolchains, IDEs, version control, and Unix command line
+                       ========================================================== -->
+                    <div class="skills-category-card" data-category="tools">
+                        <div class="category-card-header">
+                            <div class="category-header-title">
+                                <span class="category-header-icon" aria-hidden="true">🛠️</span>
+                                <h3 class="category-title">Tools &amp; Workflow</h3>
+                            </div>
+                            <span class="category-badge-pill">4 SKILLS</span>
+                        </div>
+
+                        <ul class="skills-items-list" role="list">
+                            <!-- Skill Element: Git & GitHub - Source tracking, branching, and pull request workflows -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🐙</span>
+                                        <h4 class="skill-item-name">Git &amp; GitHub</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">VCS</span>
+                                        <span class="skill-item-percent">88%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Git & GitHub Proficiency 88%">
+                                    <div class="skill-bar-fill fill-green" style="width: 88%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Branch branching strategies, commit cleanliness, merge conflict resolution, and remote collaboration.</p>
+                            </li>
+
+                            <!-- Skill Element: VS Code - Code editing, extensions, debugger configuration, and tasks -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">💻</span>
+                                        <h4 class="skill-item-name">VS Code Workspace</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">IDE</span>
+                                        <span class="skill-item-percent">92%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code Workspace Proficiency 92%">
+                                    <div class="skill-bar-fill fill-blue" style="width: 92%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Multi-language debugging, launch configurations, extension tuning, and embedded toolchains.</p>
+                            </li>
+
+                            <!-- Skill Element: Arduino IDE - Hardware flashing, COM serial monitor, and libraries -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">📟</span>
+                                        <h4 class="skill-item-name">Arduino IDE Toolchain</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">HARDWARE</span>
+                                        <span class="skill-item-percent">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Arduino IDE Toolchain Proficiency 90%">
+                                    <div class="skill-bar-fill fill-orange" style="width: 90%;"></div>
+                                </div>
+                                <p class="skill-item-desc">Compiling sketches, board flashing, baud rate monitoring, and external sensor library integration.</p>
+                            </li>
+
+                            <!-- Skill Element: Linux & Bash - Unix terminal commands, environment paths, and automation -->
+                            <li class="skill-item">
+                                <div class="skill-item-header">
+                                    <div class="skill-item-info">
+                                        <span class="skill-item-icon" aria-hidden="true">🐧</span>
+                                        <h4 class="skill-item-name">Linux &amp; CLI</h4>
+                                    </div>
+                                    <div class="skill-item-meta">
+                                        <span class="skill-badge-tag">TERMINAL</span>
+                                        <span class="skill-item-percent">82%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Linux & CLI Proficiency 82%">
+                                    <div class="skill-bar-fill fill-purple" style="width: 82%;"></div>
+                                </div>
+                                <p class="skill-item-desc">File systems, shell scripting, package managers, permissions, and command-line compilation.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           4. TIMELINE SECTION
+           Career milestones, work experience, education, and achievements
+           ====================================================================== -->
+        <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ QUEST LOG &amp; MILESTONES ]</span>
+                    <h2 id="timeline-heading" class="section-title">Timeline &amp; Journey</h2>
+                    <p class="section-subtitle">Chronological progression through academic degrees, hardware engineering projects, and certifications</p>
+                </div>
+
+                <!-- Milestone Category Filters -->
+                <nav class="timeline-filter-nav" aria-label="Timeline Milestone Filter Navigation">
+                    <button type="button" class="timeline-filter-btn active" data-timeline-filter="all" aria-pressed="true">
+                        ★ ALL MILESTONES
+                    </button>
+                    <button type="button" class="timeline-filter-btn" data-timeline-filter="education" aria-pressed="false">
+                        🎓 EDUCATION
+                    </button>
+                    <button type="button" class="timeline-filter-btn" data-timeline-filter="project" aria-pressed="false">
+                        🛠️ PROJECTS &amp; CERTS
+                    </button>
+                </nav>
+
+                <div class="timeline-container">
+                    <div class="timeline-track">
+                        <!-- Milestone 1: B.E. CSE Data Science -->
+                        <article class="timeline-item" data-timeline-category="education">
+                            <div class="timeline-node" aria-hidden="true" title="Degree Milestone">🎓</div>
+                            <div class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <div class="timeline-badges-group">
+                                        <span class="timeline-badge-date">2025 — 2029 (CURRENT)</span>
+                                        <span class="timeline-badge-category">DEGREE PROGRAM</span>
+                                    </div>
+                                    <span class="timeline-badge-metric">CGPA: 6.5</span>
+                                </div>
+                                <h3 class="timeline-card-title">Bachelor of Engineering — CSE (Data Science)</h3>
+                                <div class="timeline-card-org">
+                                    <span>🏛️</span>
+                                    <span>Adichunchanagiri Institute of Technology, Chikkamagaluru</span>
+                                </div>
+                                <p class="timeline-card-desc">
+                                    Specializing in Computer Science &amp; Engineering with a dedicated focus on Data Science. Developing core strengths in data structures, algorithms, object-oriented software engineering, statistical modeling, and relational database systems.
+                                </p>
+                                <ul class="timeline-tags-list" role="list">
+                                    <li class="timeline-tag-pill">Python</li>
+                                    <li class="timeline-tag-pill">C / C++</li>
+                                    <li class="timeline-tag-pill">Data Structures</li>
+                                    <li class="timeline-tag-pill">Algorithms</li>
+                                    <li class="timeline-tag-pill">Data Science</li>
+                                    <li class="timeline-tag-pill">DBMS</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- Milestone 2: Rain Water Sensor Project -->
+                        <article class="timeline-item" data-timeline-category="project">
+                            <div class="timeline-node" aria-hidden="true" title="Hardware Project Milestone">🌧️</div>
+                            <div class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <div class="timeline-badges-group">
+                                        <span class="timeline-badge-date">2024</span>
+                                        <span class="timeline-badge-category">HARDWARE / EMBEDDED PROJECT</span>
+                                    </div>
+                                    <span class="timeline-badge-metric">LIVE PROTOTYPE</span>
+                                </div>
+                                <h3 class="timeline-card-title">Rain Water Sensor &amp; Real-Time Alarm System</h3>
+                                <div class="timeline-card-org">
+                                    <span>⚡</span>
+                                    <span>Autonomous Embedded Systems &amp; Smart IoT</span>
+                                </div>
+                                <p class="timeline-card-desc">
+                                    Engineered a responsive automated rain detection and alerting apparatus. Wired an Arduino Uno microcontroller with a nickel-plated rain sensor board, piezo buzzer, and dual LED status signals. Programmed responsive Embedded C logic with dynamic moisture threshold triggers to prevent water damage in smart buildings.
+                                </p>
+                                <ul class="timeline-tags-list" role="list">
+                                    <li class="timeline-tag-pill">Arduino Uno</li>
+                                    <li class="timeline-tag-pill">Embedded C</li>
+                                    <li class="timeline-tag-pill">Rain Sensor</li>
+                                    <li class="timeline-tag-pill">Hardware Circuits</li>
+                                    <li class="timeline-tag-pill">Buzzer / LED</li>
+                                    <li class="timeline-tag-pill">IoT Prototyping</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- Milestone 3: Certifications -->
+                        <article class="timeline-item" data-timeline-category="project">
+                            <div class="timeline-node" aria-hidden="true" title="Certification Milestone">📜</div>
+                            <div class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <div class="timeline-badges-group">
+                                        <span class="timeline-badge-date">2024</span>
+                                        <span class="timeline-badge-category">PROFESSIONAL CERTIFICATIONS</span>
+                                    </div>
+                                    <span class="timeline-badge-metric">NPTEL VERIFIED</span>
+                                </div>
+                                <h3 class="timeline-card-title">NPTEL Python for Data Science &amp; Certified C Programmer</h3>
+                                <div class="timeline-card-org">
+                                    <span>🏅</span>
+                                    <span>National Programme on Technology Enhanced Learning (NPTEL)</span>
+                                </div>
+                                <p class="timeline-card-desc">
+                                    Completed rigorous national-level certification in <em>Python for Data Science</em>, mastering data manipulation, NumPy, Pandas, and exploratory analysis. Earned <em>Certified C Programmer</em> distinction demonstrating proficiency in pointers, memory allocation, and modular architecture.
+                                </p>
+                                <ul class="timeline-tags-list" role="list">
+                                    <li class="timeline-tag-pill">Python Data Science</li>
+                                    <li class="timeline-tag-pill">NPTEL</li>
+                                    <li class="timeline-tag-pill">Certified C Programmer</li>
+                                    <li class="timeline-tag-pill">NumPy &amp; Pandas</li>
+                                    <li class="timeline-tag-pill">Memory Safety</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- Milestone 4: PUC Education -->
+                        <article class="timeline-item" data-timeline-category="education">
+                            <div class="timeline-node" aria-hidden="true" title="PUC Education Milestone">📐</div>
+                            <div class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <div class="timeline-badges-group">
+                                        <span class="timeline-badge-date">2024 — 2025</span>
+                                        <span class="timeline-badge-category">PRE-UNIVERSITY EDUCATION</span>
+                                    </div>
+                                    <span class="timeline-badge-metric">SCORE: 73%</span>
+                                </div>
+                                <h3 class="timeline-card-title">Pre-University Course (PUC) — Science (PCMC)</h3>
+                                <div class="timeline-card-org">
+                                    <span>🏫</span>
+                                    <span>Sai Angel PU College, Chikkamagaluru</span>
+                                </div>
+                                <p class="timeline-card-desc">
+                                    Graduated with 73% focusing on Physics, Chemistry, Mathematics, and Computer Science. Built foundational problem-solving discipline, boolean algebra comprehension, and introductory procedural programming.
+                                </p>
+                                <ul class="timeline-tags-list" role="list">
+                                    <li class="timeline-tag-pill">Mathematics</li>
+                                    <li class="timeline-tag-pill">Computer Science</li>
+                                    <li class="timeline-tag-pill">Physics</li>
+                                    <li class="timeline-tag-pill">Analytical Logic</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- Milestone 5: SSLC Education -->
+                        <article class="timeline-item" data-timeline-category="education">
+                            <div class="timeline-node" aria-hidden="true" title="SSLC Education Milestone">🎒</div>
+                            <div class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <div class="timeline-badges-group">
+                                        <span class="timeline-badge-date">2022 — 2023</span>
+                                        <span class="timeline-badge-category">SECONDARY SCHOOL</span>
+                                    </div>
+                                    <span class="timeline-badge-metric">SCORE: 66%</span>
+                                </div>
+                                <h3 class="timeline-card-title">Secondary School Leaving Certificate (SSLC)</h3>
+                                <div class="timeline-card-org">
+                                    <span>🏫</span>
+                                    <span>Sai Angels School, Chikkamagaluru</span>
+                                </div>
+                                <p class="timeline-card-desc">
+                                    Secured secondary school foundation with strong academic engagement in mathematics and sciences, developing early enthusiasm for computer technology and electronic systems.
+                                </p>
+                                <ul class="timeline-tags-list" role="list">
+                                    <li class="timeline-tag-pill">Core Sciences</li>
+                                    <li class="timeline-tag-pill">Mathematics</li>
+                                    <li class="timeline-tag-pill">Academic Foundation</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           5. PROJECTS SECTION
+           Featured software engineering projects with live demos and code links
+           ====================================================================== -->
+        <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ QUEST INVENTORY &amp; BUILDS ]</span>
+                    <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">
+                        Hands-on embedded microcontroller prototypes, data science analytics pipelines, and interactive retro web builds
+                    </p>
+                </div>
+
+                <!-- Category Filter Controls -->
+                <nav class="projects-filter-nav" aria-label="Project Category Filter Navigation">
+                    <button type="button" class="projects-filter-btn active" data-project-filter="all" aria-pressed="true">
+                        ★ ALL PROJECTS
+                    </button>
+                    <button type="button" class="projects-filter-btn" data-project-filter="hardware" aria-pressed="false">
+                        ⚡ HARDWARE &amp; IOT
+                    </button>
+                    <button type="button" class="projects-filter-btn" data-project-filter="data-science" aria-pressed="false">
+                        📊 DATA SCIENCE &amp; ML
+                    </button>
+                    <button type="button" class="projects-filter-btn" data-project-filter="web" aria-pressed="false">
+                        🎮 RETRO &amp; WEB
+                    </button>
+                </nav>
+
+                <!-- ==============================================================
+                   PROJECT THUMBNAILS GRID
+                   Consistent grid margins, padding, and smooth hover elevation.
+                   ============================================================== -->
+                <div class="projects-grid">
+
+                    <!-- 
+                      ========================================================================
+                      PROJECT THUMBNAIL 1: RAIN WATER SENSOR & REAL-TIME ALARM SYSTEM
+                      HOW THIS THUMBNAIL IS CONNECTED TO ITS PROJECT DETAIL:
+                      1. Trigger Binding: The thumbnail wrapper (.project-thumbnail-wrapper), 
+                         the project title (.project-title), and the 'View Details' button 
+                         all carry the attribute [data-project-trigger="project-rain-sensor"]
+                         and aria-controls="modal-project-rain-sensor".
+                      2. Modal Linkage: When clicked (or activated via Enter/Space key), 
+                         the client-side script retrieves the project ID 'project-rain-sensor' 
+                         and opens the corresponding modal dialog with ID '#modal-project-rain-sensor'.
+                      3. Detailed Content: The modal reveals complete circuit schematics, 
+                         ATmega328P pinouts, firmware debounce algorithms, and component specs.
+                      4. Direct Link Fallback: The card footer also provides a direct link 
+                         (href="#contact") for inquiries and live demonstration requests.
+                      ========================================================================
+                    -->
+                    <article class="project-card" data-category="hardware" data-project-id="project-rain-sensor">
+                        <!-- Clickable Thumbnail Container -->
+                        <div class="project-thumbnail-wrapper" role="button" tabindex="0" 
+                             data-project-trigger="project-rain-sensor" 
+                             aria-haspopup="dialog" 
+                             aria-controls="modal-project-rain-sensor" 
+                             aria-label="Click to open detailed view for Rain Water Sensor &amp; Real-Time Alarm System">
+                            <img src="./project_rain_sensor.jpg" 
+                                 alt="Rain Water Sensor &amp; Real-Time Alarm System 16-bit pixel art prototype" 
+                                 class="project-thumbnail-img" 
+                                 loading="lazy" />
+                            <div class="project-thumbnail-overlay">
+                                <span class="project-thumbnail-badge">🔍 VIEW DETAILED VIEW</span>
+                            </div>
+                            <span class="project-type-tag">⚡ HARDWARE &amp; IOT</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta-row">
+                                <span class="project-year-badge">2024</span>
+                                <span class="project-status-badge">● LIVE PROTOTYPE</span>
+                            </div>
+                            <h3 class="project-title" data-project-trigger="project-rain-sensor" tabindex="0" role="button">
+                                Rain Water Sensor &amp; Real-Time Alarm System
+                            </h3>
+                            <p class="project-description">
+                                Autonomous moisture-sensing apparatus utilizing an Arduino Uno, nickel sensor plate, and instant acoustic/LED triggers for smart building rain defense.
+                            </p>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Arduino Uno</li>
+                                <li>Embedded C</li>
+                                <li>Rain Sensor</li>
+                                <li>Piezo Buzzer</li>
+                                <li>Circuit Design</li>
+                            </ul>
+                            <div class="project-links">
+                                <button type="button" class="btn-project-detail" data-project-trigger="project-rain-sensor" aria-haspopup="dialog">
+                                    <span>⚡ View Details</span>
+                                </button>
+                                <a href="#contact" class="project-link" aria-label="Demo request for Rain Water Sensor">
+                                    <span>Hardware Demo &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 
+                      ========================================================================
+                      PROJECT THUMBNAIL 2: PYTHON DATA SCIENCE & STATISTICAL ANALYTICS SUITE
+                      HOW THIS THUMBNAIL IS CONNECTED TO ITS PROJECT DETAIL:
+                      1. Trigger Binding: The thumbnail wrapper (.project-thumbnail-wrapper),
+                         title, and 'View Details' button carry [data-project-trigger="project-data-science"]
+                         and aria-controls="modal-project-data-science".
+                      2. Modal Linkage: Activating this thumbnail maps directly to the 
+                         '#modal-project-data-science' overlay container via JavaScript event delegation.
+                      3. Detailed Content: The modal presents comprehensive data pipelines,
+                         NumPy/Pandas transformations, correlation matrices, and statistical modeling
+                         developed under the NPTEL Data Science curriculum.
+                      4. Direct Link Fallback: Includes a direct navigation link to explore the dataset
+                         and analytical notebooks.
+                      ========================================================================
+                    -->
+                    <article class="project-card" data-category="data-science" data-project-id="project-data-science">
+                        <!-- Clickable Thumbnail Container -->
+                        <div class="project-thumbnail-wrapper" role="button" tabindex="0" 
+                             data-project-trigger="project-data-science" 
+                             aria-haspopup="dialog" 
+                             aria-controls="modal-project-data-science" 
+                             aria-label="Click to open detailed view for Python Data Science &amp; Statistical Analytics Suite">
+                            <img src="./project_data_science.jpg" 
+                                 alt="Python Data Science &amp; Statistical Analytics Suite retro pixel CRT dashboard" 
+                                 class="project-thumbnail-img" 
+                                 loading="lazy" />
+                            <div class="project-thumbnail-overlay">
+                                <span class="project-thumbnail-badge">🔍 VIEW DETAILED VIEW</span>
+                            </div>
+                            <span class="project-type-tag">📊 DATA SCIENCE &amp; ML</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta-row">
+                                <span class="project-year-badge">2024</span>
+                                <span class="project-status-badge">● NPTEL CERTIFIED</span>
+                            </div>
+                            <h3 class="project-title" data-project-trigger="project-data-science" tabindex="0" role="button">
+                                Python Data Science &amp; Predictive Analytics Suite
+                            </h3>
+                            <p class="project-description">
+                                Statistical modeling and exploratory data analytics framework executing cluster analysis, matrix operations, and regression modeling with high efficiency.
+                            </p>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Matplotlib</li>
+                                <li>Scikit-Learn</li>
+                            </ul>
+                            <div class="project-links">
+                                <button type="button" class="btn-project-detail" data-project-trigger="project-data-science" aria-haspopup="dialog">
+                                    <span>⚡ View Details</span>
+                                </button>
+                                <a href="#skills" class="project-link" aria-label="View data science skill competencies">
+                                    <span>Stack Overview &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 
+                      ========================================================================
+                      PROJECT THUMBNAIL 3: 8-BIT RETRO PORTFOLIO & INTERACTIVE QUEST ENGINE
+                      HOW THIS THUMBNAIL IS CONNECTED TO ITS PROJECT DETAIL:
+                      1. Trigger Binding: The thumbnail wrapper (.project-thumbnail-wrapper),
+                         title, and 'View Details' button carry [data-project-trigger="project-retro-portfolio"]
+                         and aria-controls="modal-project-retro-portfolio".
+                      2. Modal Linkage: Click triggers openProjectModal('project-retro-portfolio'),
+                         displaying '#modal-project-retro-portfolio' with technical architecture.
+                      3. Detailed Content: The modal explains the design architecture: Vanilla CSS
+                         pixel tokens, Web Audio API sound synthesis, dual theme engine, and AI assistant.
+                      4. Direct Link Fallback: Contains anchor link to top of the site for immediate live testing.
+                      ========================================================================
+                    -->
+                    <article class="project-card" data-category="web" data-project-id="project-retro-portfolio">
+                        <!-- Clickable Thumbnail Container -->
+                        <div class="project-thumbnail-wrapper" role="button" tabindex="0" 
+                             data-project-trigger="project-retro-portfolio" 
+                             aria-haspopup="dialog" 
+                             aria-controls="modal-project-retro-portfolio" 
+                             aria-label="Click to open detailed view for 8-Bit Retro Portfolio &amp; Quest Engine">
+                            <img src="./project_retro_portfolio.jpg" 
+                                 alt="8-Bit Retro Portfolio &amp; Quest Engine arcade workstation pixel art" 
+                                 class="project-thumbnail-img" 
+                                 loading="lazy" />
+                            <div class="project-thumbnail-overlay">
+                                <span class="project-thumbnail-badge">🔍 VIEW DETAILED VIEW</span>
+                            </div>
+                            <span class="project-type-tag">🎮 RETRO &amp; WEB</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta-row">
+                                <span class="project-year-badge">2026</span>
+                                <span class="project-status-badge">● CURRENT PRODUCTION</span>
+                            </div>
+                            <h3 class="project-title" data-project-trigger="project-retro-portfolio" tabindex="0" role="button">
+                                8-Bit Retro Portfolio &amp; Quest Engine
+                            </h3>
+                            <p class="project-description">
+                                High-performance pixel art portfolio featuring zero external dependencies, 8-bit sound effects, dual light/dark themes, and an interactive RPG quest log.
+                            </p>
+                            <ul class="project-tech-stack" role="list">
+                                <li>HTML5 / Semantics</li>
+                                <li>Vanilla CSS</li>
+                                <li>JavaScript ES6+</li>
+                                <li>Web Audio API</li>
+                                <li>Pixel Design</li>
+                            </ul>
+                            <div class="project-links">
+                                <button type="button" class="btn-project-detail" data-project-trigger="project-retro-portfolio" aria-haspopup="dialog">
+                                    <span>⚡ View Details</span>
+                                </button>
+                                <a href="#hero" class="project-link" aria-label="Revisit top of the portfolio experience">
+                                    <span>Live In-Use &uarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 
+                      ========================================================================
+                      PROJECT THUMBNAIL 4: STUDENT ACADEMIC PERFORMANCE & COMPETENCY MATRIX
+                      HOW THIS THUMBNAIL IS CONNECTED TO ITS PROJECT DETAIL:
+                      1. Trigger Binding: The thumbnail wrapper (.project-thumbnail-wrapper),
+                         title, and 'View Details' button carry [data-project-trigger="project-student-analytics"]
+                         and aria-controls="modal-project-student-analytics".
+                      2. Modal Linkage: Clicking maps to '#modal-project-student-analytics' via
+                         openProjectModal('project-student-analytics').
+                      3. Detailed Content: Reveals academic grade distribution curves (normal bell curve),
+                         multi-dimensional radar charts for competency matrices, and ranking algorithms.
+                      4. Direct Link Fallback: Includes link to contact section for research inquiry.
+                      ========================================================================
+                    -->
+                    <article class="project-card" data-category="data-science" data-project-id="project-student-analytics">
+                        <!-- Clickable Thumbnail Container -->
+                        <div class="project-thumbnail-wrapper" role="button" tabindex="0" 
+                             data-project-trigger="project-student-analytics" 
+                             aria-haspopup="dialog" 
+                             aria-controls="modal-project-student-analytics" 
+                             aria-label="Click to open detailed view for Student Academic Performance &amp; Competency Matrix">
+                            <img src="./project_student_analytics.jpg" 
+                                 alt="Student Academic Performance &amp; Competency Matrix retro CRT display" 
+                                 class="project-thumbnail-img" 
+                                 loading="lazy" />
+                            <div class="project-thumbnail-overlay">
+                                <span class="project-thumbnail-badge">🔍 VIEW DETAILED VIEW</span>
+                            </div>
+                            <span class="project-type-tag">📊 DATA SCIENCE &amp; ML</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta-row">
+                                <span class="project-year-badge">2025</span>
+                                <span class="project-status-badge">● ANALYTICS ENGINE</span>
+                            </div>
+                            <h3 class="project-title" data-project-trigger="project-student-analytics" tabindex="0" role="button">
+                                Student Academic Performance &amp; Competency Matrix
+                            </h3>
+                            <p class="project-description">
+                                Educational data mining engine analyzing grade distributions, standard deviations, and multi-parameter student competency radar matrices.
+                            </p>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Python</li>
+                                <li>Data Mining</li>
+                                <li>Radar Matrices</li>
+                                <li>Distribution Curves</li>
+                                <li>Statistical Evaluation</li>
+                            </ul>
+                            <div class="project-links">
+                                <button type="button" class="btn-project-detail" data-project-trigger="project-student-analytics" aria-haspopup="dialog">
+                                    <span>⚡ View Details</span>
+                                </button>
+                                <a href="#contact" class="project-link" aria-label="Inquire regarding Student Analytics Engine">
+                                    <span>Inquire Specs &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- ==============================================================
+                   DETAILED VIEW MODAL OVERLAYS
+                   These modal containers contain in-depth project documentation,
+                   hardware pinouts, algorithms, and key highlights.
+                   Each modal's id matches the data-project-trigger of its thumbnail.
+                   ============================================================== -->
+
+                <!-- Detailed Modal 1: Rain Water Sensor -->
+                <div class="project-modal-overlay" id="modal-project-rain-sensor" role="dialog" aria-modal="true" aria-labelledby="modal-title-rain-sensor">
+                    <div class="project-modal-container">
+                        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close project detailed view">&times;</button>
+                        
+                        <div class="modal-preview-banner">
+                            <img src="./project_rain_sensor.jpg" alt="Rain Water Sensor Detailed Architecture" class="modal-preview-img" />
+                        </div>
+
+                        <div class="modal-header-info">
+                            <h3 class="modal-title" id="modal-title-rain-sensor">⚡ Rain Water Sensor &amp; Real-Time Alarm System</h3>
+                            <div class="modal-meta-grid">
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Domain</span>
+                                    <span class="modal-meta-value">IoT &amp; Embedded Hardware</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Controller</span>
+                                    <span class="modal-meta-value">Arduino Uno (ATmega328P)</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Response Time</span>
+                                    <span class="modal-meta-value">&lt; 150 Milliseconds</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Status</span>
+                                    <span class="modal-meta-value">Tested Physical Prototype</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>📋</span> Project Overview &amp; Architecture</h4>
+                            <p class="modal-body-text">
+                                The Rain Water Sensor &amp; Real-Time Alarm System is an automated embedded hardware solution engineered to detect precipitation events with zero human supervision. The hardware combines a nickel-coated rain board sensor plate with an onboard LM393 comparator module connected to an Arduino Uno microcontroller.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>⚙️</span> Key Engineering Features</h4>
+                            <ul class="modal-specs-list">
+                                <li><strong>Dual Output Acquisition:</strong> Leverages both Analog A0 (for measuring continuous precipitation intensity) and Digital D0 (for binary wet/dry threshold interrupts).</li>
+                                <li><strong>Dynamic Acoustic Warning:</strong> Activates a 5V piezo transducer with frequency modulation based on moisture saturation levels.</li>
+                                <li><strong>Visual State Indicator:</strong> Tri-color LED signaling (Green for Dry, Blue for Moisture Detected, Red for Heavy Rain Warning).</li>
+                                <li><strong>Anti-Corrosion Duty Cycling:</strong> Embedded C firmware duty-cycles the sensor plate power to prevent electrolytic degradation over prolonged outdoor operation.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>🛠️</span> Technologies &amp; Components</h4>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Arduino Uno</li>
+                                <li>Embedded C</li>
+                                <li>LM393 Comparator</li>
+                                <li>Piezo Buzzer</li>
+                                <li>Resistor Networks</li>
+                                <li>Breadboard Prototyping</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-actions-bar">
+                            <a href="#contact" class="btn-modal-action btn-modal-primary" data-modal-close>
+                                <span>⚡ Request Demonstration</span>
+                            </a>
+                            <button type="button" class="btn-modal-action btn-modal-secondary" data-modal-close>
+                                <span>Close Inspection</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Modal 2: Python Data Science -->
+                <div class="project-modal-overlay" id="modal-project-data-science" role="dialog" aria-modal="true" aria-labelledby="modal-title-data-science">
+                    <div class="project-modal-container">
+                        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close project detailed view">&times;</button>
+                        
+                        <div class="modal-preview-banner">
+                            <img src="./project_data_science.jpg" alt="Data Science Analytics Suite Detailed View" class="modal-preview-img" />
+                        </div>
+
+                        <div class="modal-header-info">
+                            <h3 class="modal-title" id="modal-title-data-science">📊 Python Data Science &amp; Predictive Analytics Suite</h3>
+                            <div class="modal-meta-grid">
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Specialization</span>
+                                    <span class="modal-meta-value">Data Analytics &amp; Modeling</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Certification</span>
+                                    <span class="modal-meta-value">NPTEL IIT Swayam Verified</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Core Runtime</span>
+                                    <span class="modal-meta-value">Python 3.11+ / Jupyter</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Primary Datasets</span>
+                                    <span class="modal-meta-value">Tabular &amp; Time-Series</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>📋</span> Project Overview &amp; Analytics Framework</h4>
+                            <p class="modal-body-text">
+                                Developed as part of advanced computer science coursework and NPTEL specialization, this suite executes automated data hygiene, feature normalization, outlier identification, exploratory statistical modeling, and multi-variable predictive regression.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>⚙️</span> Key Engineering Features</h4>
+                            <ul class="modal-specs-list">
+                                <li><strong>High-Speed Vectorized Computing:</strong> Uses NumPy C-extensions for lightning-fast matrix transformations and numerical linear algebra operations.</li>
+                                <li><strong>Exploratory Data Mining:</strong> Automated correlation heatmaps, pairwise bivariate plots, and distribution histograms with Seaborn and Matplotlib.</li>
+                                <li><strong>Predictive Clustering &amp; Regression:</strong> Implements supervised Linear Regression and unsupervised K-Means clustering with Scikit-learn.</li>
+                                <li><strong>Data Cleaning Pipelines:</strong> Handles missing values, z-score outlier capping, and categorical one-hot encoding.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>🛠️</span> Technologies &amp; Libraries</h4>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Scikit-Learn</li>
+                                <li>Matplotlib</li>
+                                <li>Seaborn</li>
+                                <li>Jupyter Notebook</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-actions-bar">
+                            <a href="#skills" class="btn-modal-action btn-modal-primary" data-modal-close>
+                                <span>📊 Explore Skills</span>
+                            </a>
+                            <button type="button" class="btn-modal-action btn-modal-secondary" data-modal-close>
+                                <span>Close Inspection</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Modal 3: Retro Portfolio -->
+                <div class="project-modal-overlay" id="modal-project-retro-portfolio" role="dialog" aria-modal="true" aria-labelledby="modal-title-retro-portfolio">
+                    <div class="project-modal-container">
+                        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close project detailed view">&times;</button>
+                        
+                        <div class="modal-preview-banner">
+                            <img src="./project_retro_portfolio.jpg" alt="8-Bit Retro Portfolio Detailed View" class="modal-preview-img" />
+                        </div>
+
+                        <div class="modal-header-info">
+                            <h3 class="modal-title" id="modal-title-retro-portfolio">🎮 8-Bit Retro Portfolio &amp; Quest Engine</h3>
+                            <div class="modal-meta-grid">
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Architecture</span>
+                                    <span class="modal-meta-value">Single Page Pixel Web App</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Dependencies</span>
+                                    <span class="modal-meta-value">Zero Frameworks (Vanilla)</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Audio Engine</span>
+                                    <span class="modal-meta-value">Web Audio Synthesizer</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Accessibility</span>
+                                    <span class="modal-meta-value">WCAG 2.1 AA Compliant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>📋</span> Project Overview &amp; Architecture</h4>
+                            <p class="modal-body-text">
+                                An immersive, high-performance web experience crafted to present software engineering achievements in a nostalgic 16-bit arcade / RPG format without sacrificing modern web standards, mobile responsiveness, or fast load times.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>⚙️</span> Key Engineering Features</h4>
+                            <ul class="modal-specs-list">
+                                <li><strong>Procedural 8-Bit Audio Synth:</strong> Generates authentic square-wave and triangle-wave retro sound effects directly in the browser via the Web Audio API without bulky audio files.</li>
+                                <li><strong>Theme State Persistence:</strong> Seamlessly switches between Dark Cyberpunk and Light Pixel Arcade with automatic system theme detection and localStorage caching.</li>
+                                <li><strong>Interactive Retro AI Assistant:</strong> Embedded conversational bot that answers recruiter queries about skills, milestones, and project details in real-time.</li>
+                                <li><strong>Avatar Mode Switcher:</strong> Dynamic toggle between an authentic 16-bit generated pixel avatar and high-resolution photographic portrait.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>🛠️</span> Technologies</h4>
+                            <ul class="project-tech-stack" role="list">
+                                <li>HTML5 Semantic</li>
+                                <li>CSS3 Custom Properties</li>
+                                <li>JavaScript ES6+</li>
+                                <li>Web Audio API</li>
+                                <li>IntersectionObserver</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-actions-bar">
+                            <a href="#hero" class="btn-modal-action btn-modal-primary" data-modal-close>
+                                <span>🚀 Explore From Top</span>
+                            </a>
+                            <button type="button" class="btn-modal-action btn-modal-secondary" data-modal-close>
+                                <span>Close Inspection</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Modal 4: Student Performance Analytics -->
+                <div class="project-modal-overlay" id="modal-project-student-analytics" role="dialog" aria-modal="true" aria-labelledby="modal-title-student-analytics">
+                    <div class="project-modal-container">
+                        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close project detailed view">&times;</button>
+                        
+                        <div class="modal-preview-banner">
+                            <img src="./project_student_analytics.jpg" alt="Student Academic Performance Analytics Detailed View" class="modal-preview-img" />
+                        </div>
+
+                        <div class="modal-header-info">
+                            <h3 class="modal-title" id="modal-title-student-analytics">📊 Student Academic Performance &amp; Competency Matrix</h3>
+                            <div class="modal-meta-grid">
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Domain</span>
+                                    <span class="modal-meta-value">Educational Data Science</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Analysis Types</span>
+                                    <span class="modal-meta-value">Distribution Curves &amp; Radar</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Metrics Evaluated</span>
+                                    <span class="modal-meta-value">GPA, Attendance, Lab Mastery</span>
+                                </div>
+                                <div class="modal-meta-item">
+                                    <span class="modal-meta-label">Output</span>
+                                    <span class="modal-meta-value">Cohort Performance Rankings</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>📋</span> Project Overview &amp; Statistical Engine</h4>
+                            <p class="modal-body-text">
+                                A comprehensive academic performance diagnostic dashboard engineered to model institutional student evaluation metrics. Computes gaussian normal distributions, cohort percentiles, and multi-axis competency polygons across academic and practical dimensions.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>⚙️</span> Key Engineering Features</h4>
+                            <ul class="modal-specs-list">
+                                <li><strong>Normal Grade Distribution Fitting:</strong> Evaluates cohort score histograms against idealized normal distribution curves to measure test variance and grading equity.</li>
+                                <li><strong>Competency Polygon Matrices:</strong> Generates 5-variable radar profiles measuring Attendance, Discipline, Academics, Practical Labs, and Extracurricular Leadership.</li>
+                                <li><strong>Early Academic Intervention Alerts:</strong> Flags students dropping below 1.5 standard deviations from the cohort mean for proactive mentoring.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="modal-section-title"><span>🛠️</span> Technologies</h4>
+                            <ul class="project-tech-stack" role="list">
+                                <li>Python</li>
+                                <li>Data Modeling</li>
+                                <li>Statistical Distribution Analysis</li>
+                                <li>Matplotlib / Seaborn</li>
+                                <li>Data Aggregation</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-actions-bar">
+                            <a href="#contact" class="btn-modal-action btn-modal-primary" data-modal-close>
+                                <span>⚡ Inquire Collaboration</span>
+                            </a>
+                            <button type="button" class="btn-modal-action btn-modal-secondary" data-modal-close>
+                                <span>Close Inspection</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           VIDEO HIGHLIGHT SECTION
+           Responsive embedded portfolio introduction / project demo reel.
+           Uses CSS aspect-ratio for fluid 16:9 scaling at any screen size.
+           ====================================================================== -->
+        <section id="video" class="section video-section" aria-labelledby="video-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ MISSION BROADCAST ]</span>
+                    <h2 id="video-heading" class="section-title">Portfolio Highlight Reel</h2>
+                    <p class="section-subtitle">
+                        A visual walkthrough of D Mani Shashank's projects, skills, and engineering journey — from hardware prototypes to data science analytics.
+                    </p>
+                </div>
+
+                <!-- Video Player Frame -->
+                <div class="video-stage">
+
+                    <!-- Pixel Art CRT Monitor Frame wrapping the video -->
+                    <div class="video-crt-frame" aria-label="Portfolio Highlight Video Frame">
+
+                        <!-- CRT Top Bar (decorative) -->
+                        <div class="video-crt-topbar">
+                            <div class="video-crt-controls" aria-hidden="true">
+                                <span class="vcrt-dot dot-red"></span>
+                                <span class="vcrt-dot dot-yellow"></span>
+                                <span class="vcrt-dot dot-green"></span>
+                            </div>
+                            <span class="video-crt-label">📺 DMS_PORTFOLIO_REEL_v1.0 — LIVE BROADCAST</span>
+                            <span class="video-crt-signal">&#11044; ON AIR</span>
+                        </div>
+
+                        <!--
+                          RESPONSIVE VIDEO CONTAINER
+                          ------------------------------------------
+                          CSS technique: `aspect-ratio: 16 / 9` with
+                          width: 100% ensures the video player always
+                          maintains a proper 16:9 ratio regardless of
+                          viewport size.
+                          Direct local HTML5 video playback without YouTube.
+                          ------------------------------------------
+                        -->
+                        <div class="video-responsive-wrapper">
+                            <video
+                                id="portfolio-video-player"
+                                class="video-element"
+                                controls
+                                playsinline
+                                preload="metadata"
+                                poster="./WhatsApp Image 2026-10-07 at 9.55.08 AM.jpeg"
+                            >
+                                <source src="./WhatsApp Video 2026-10-07 at 9.52.56 AM.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Scanline overlay for authentic CRT pixel aesthetic -->
+                        <div class="video-scanline-overlay" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Video Caption & Metadata Block -->
+                    <figure class="video-caption-block">
+                        <!-- Caption explaining the video's content -->
+                        <figcaption class="video-caption-text">
+                            <span class="video-caption-icon" aria-hidden="true">📽️</span>
+                            <span>
+                                <strong>Personal Introduction &amp; Portfolio Highlights</strong> — Video presentation by D Mani Shashank, showcasing engineering background, computer science &amp; data science projects, and technical journey.
+                            </span>
+                        </figcaption>
+
+                        <!-- Quick metadata chips below the video -->
+                        <div class="video-meta-chips" role="list" aria-label="Video metadata">
+                            <span class="video-chip" role="listitem">
+                                <span aria-hidden="true">▶️</span> Personal Introduction
+                            </span>
+                            <span class="video-chip" role="listitem">
+                                <span aria-hidden="true">🎓</span> CSE (Data Science)
+                            </span>
+                            <span class="video-chip" role="listitem">
+                                <span aria-hidden="true">🌐</span> Local HD Video
+                            </span>
+                            <span class="video-chip" role="listitem">
+                                <span aria-hidden="true">🎬</span> MP4 Video Player
+                            </span>
+                        </div>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           6. TESTIMONIALS SECTION (Pixel Art Style)
+           Player commendations, academic endorsements, and mentor reviews
+           ====================================================================== -->
+        <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">Commendations and feedback from professors, project mentors, and teammates</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="testimonial-quest-badge">ACADEMIC PROJECT</span>
+                            <span class="testimonial-rating" aria-label="5 stars rating">★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Shashank's ability to bridge hardware and embedded software on the Rain Water Sensor project was remarkable. Clean C architecture and prompt problem solving."
+                        </blockquote>
+                        <div class="testimonial-author-box">
+                            <div class="testimonial-avatar" aria-hidden="true">PROF</div>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-name">Academic Faculty</span>
+                                <span class="testimonial-role">Dept of Computer Science &amp; Eng</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Testimonial 2 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="testimonial-quest-badge">TEAM QUEST</span>
+                            <span class="testimonial-rating" aria-label="5 stars rating">★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "A disciplined developer with great grasp of Python and data science concepts. Whenever our code hit an algorithmic bottleneck, Shashank found an optimal solution."
+                        </blockquote>
+                        <div class="testimonial-author-box">
+                            <div class="testimonial-avatar" aria-hidden="true">DEV</div>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-name">Project Collaborator</span>
+                                <span class="testimonial-role">AI / Data Science Team Lead</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Testimonial 3 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="testimonial-quest-badge">HACKATHON</span>
+                            <span class="testimonial-rating" aria-label="5 stars rating">★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "High-energy collaborator who delivers under sprint deadlines. Shashank's attention to modular code structure and logic is truly top tier."
+                        </blockquote>
+                        <div class="testimonial-author-box">
+                            <div class="testimonial-avatar" aria-hidden="true">HACK</div>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-name">Hackathon Teammate</span>
+                                <span class="testimonial-role">Full-Stack Engineer</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           7. INTERACTIVE TERMINAL CHAT SECTION (Pixel Art Style)
+           8-Bit retro terminal where visitors can query developer stats & details
+           ====================================================================== -->
+        <section id="chat" class="section chat-section" aria-labelledby="chat-heading">
+            <div class="container chat-terminal-container">
+                <div class="section-header">
+                    <h2 id="chat-heading" class="section-title">Terminal Chat</h2>
+                    <p class="section-subtitle">Interact with the digital terminal or query developer knowledge</p>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-topbar">
+                        <div class="terminal-controls">
+                            <span class="terminal-dot dot-red" aria-hidden="true"></span>
+                            <span class="terminal-dot dot-yellow" aria-hidden="true"></span>
+                            <span class="terminal-dot dot-green" aria-hidden="true"></span>
+                        </div>
+                        <span class="terminal-title">SHASHANK_BOT v1.0.0 -- TTY:8080</span>
+                        <span class="terminal-status">ONLINE ●</span>
+                    </div>
+
+                    <div class="terminal-log" id="terminal-log" role="log" aria-live="polite">
+                        <!-- Initial Bot Greeting -->
+                        <div class="chat-bubble bot">
+                            <div class="chat-bubble-avatar" aria-hidden="true">👾</div>
+                            <div class="chat-bubble-msg">
+                                Hello visitor! I'm Shashank's interactive portfolio assistant. Click a quick prompt below or type your question to learn more about his skills, education, or projects!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick suggestion prompt chips -->
+                    <div class="chat-quick-chips">
+                        <span class="chip-label">QUICK PROMPTS:</span>
+                        <button type="button" class="quick-chip-btn" data-msg="What are your primary skills?">Skills?</button>
+                        <button type="button" class="quick-chip-btn" data-msg="Tell me about your rain sensor project.">Rain Sensor Project?</button>
+                        <button type="button" class="quick-chip-btn" data-msg="Where are you studying?">Education?</button>
+                        <button type="button" class="quick-chip-btn" data-msg="How can I contact Shashank?">Contact Info?</button>
+                    </div>
+
+                    <!-- Input message row -->
+                    <form class="chat-input-row" id="terminal-chat-form" action="#" onsubmit="return false;">
+                        <label for="chat-input-field" class="sr-only">Type message for terminal assistant</label>
+                        <input 
+                            type="text" 
+                            id="chat-input-field" 
+                            class="chat-input" 
+                            placeholder="Type a command or message (e.g., 'skills', 'contact')..." 
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="chat-send-btn" id="chat-send-btn">
+                            SEND <span>⏎</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           8. CONTACT SECTION
+           Contact form, social profiles, email, and location
+           ====================================================================== -->
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Interested in collaborating or have an open role? Let's connect!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Contact Details</h3>
+                        <p>Feel free to reach out for opportunities, discussions, or questions.</p>
+                        
+                        <ul class="contact-details-list" role="list">
+                            <li>
+                                <strong>Email:</strong> 
+                                <a href="mailto:dmanishashank@gmail.com">dmanishashank@gmail.com</a>
+                            </li>
+                            <li>
+                                <strong>Phone:</strong> 
+                                <a href="tel:9964138579">+91 9964138579</a>
+                            </li>
+                            <li>
+                                <strong>LinkedIn:</strong> 
+                                <a href="https://linkedin.com/in/d-mani-shashank-550656374" target="_blank" rel="noopener noreferrer">d-mani-shashank-550656374</a>
+                            </li>
+                            <li>
+                                <strong>GitHub:</strong> 
+                                <a href="https://github.com/dmanishashank" target="_blank" rel="noopener noreferrer">github.com/dmanishashank</a>
+                            </li>
+                            <li>
+                                <strong>Location:</strong> 
+                                <span>Chikkamagaluru, Karnataka, India</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Form Placeholder -->
+                    <form class="contact-form" id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Jane Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="jane@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary pixel-btn pixel-btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER
+       Copyright notice, quick navigation, back to top button, and social links
+       ========================================================================== -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 D Mani Shashank. All rights reserved.</p>
+
+            <ul class="footer-social-links" role="list">
+                <li><a href="https://github.com/dmanishashank" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/d-mani-shashank-550656374" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="mailto:dmanishashank@gmail.com">Email</a></li>
+            </ul>
+
+            <a href="#hero" class="back-to-top" aria-label="Back to top of page">&uarr; Back to Top</a>
+        </div>
+    </footer>
+
+    </div><!-- /.page-wrapper -->
+
+    <!-- ==========================================================================
+       SCRIPTS: NIGHT MODE TOGGLE, MOBILE NAVBAR, SCROLL SPY & TERMINAL CHAT
+       ========================================================================== -->
+    <script>
+        (function() {
+            // --- 1. NIGHT MODE TOGGLE & BROWSER THEME MEDIA QUERY DETECTION ---
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            const htmlElement = document.documentElement;
+
+            const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            let savedTheme = localStorage.getItem('portfolio-theme-preference');
+
+            function updateThemeDisplay(theme, isDark) {
+                if (themeToggleBtn) {
+                    themeToggleBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+                    themeToggleBtn.setAttribute(
+                        'title', 
+                        theme === 'auto' 
+                            ? `System detected: ${isDark ? 'Night' : 'Day'} Mode (Click to toggle)`
+                            : `Current: ${isDark ? 'Night' : 'Day'} Mode (Click to toggle)`
+                    );
+                }
+                if (themeIcon) {
+                    themeIcon.textContent = isDark ? '🌙' : '☀️';
+                }
+                if (themeText) {
+                    themeText.textContent = isDark ? 'NIGHT' : 'DAY';
+                }
+            }
+
+            function applyTheme(theme, persist = false) {
+                if (persist) {
+                    localStorage.setItem('portfolio-theme-preference', theme);
+                    savedTheme = theme;
+                }
+
+                if (theme === 'auto') {
+                    htmlElement.removeAttribute('data-theme');
+                    const isDark = systemDarkQuery.matches;
+                    updateThemeDisplay('auto', isDark);
+                } else if (theme === 'dark') {
+                    htmlElement.setAttribute('data-theme', 'dark');
+                    updateThemeDisplay('dark', true);
+                } else if (theme === 'light') {
+                    htmlElement.setAttribute('data-theme', 'light');
+                    updateThemeDisplay('light', false);
+                }
+            }
+
+            if (savedTheme === 'dark' || savedTheme === 'light') {
+                applyTheme(savedTheme, false);
+            } else {
+                applyTheme('auto', false);
+            }
+
+            systemDarkQuery.addEventListener('change', () => {
+                if (!savedTheme || savedTheme === 'auto') {
+                    applyTheme('auto', false);
+                }
+            });
+
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', () => {
+                    const currentIsDark = htmlElement.getAttribute('data-theme') === 'dark' || 
+                        (!htmlElement.hasAttribute('data-theme') && systemDarkQuery.matches);
+                    
+                    const nextTheme = currentIsDark ? 'light' : 'dark';
+                    applyTheme(nextTheme, true);
+                });
+            }
+
+            // --- 2. VERTICAL NAVBAR: MOBILE DRAWER & ACCESSIBILITY ---
+            const verticalNav = document.getElementById('vertical-nav');
+            const vnavBackdrop = document.getElementById('vnav-backdrop');
+            const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+            const vnavCloseBtn = document.getElementById('vnav-close-btn');
+            const vnavLinks = document.querySelectorAll('.vnav-link');
+
+            function openMobileNav() {
+                if (verticalNav && vnavBackdrop) {
+                    verticalNav.classList.add('is-open');
+                    vnavBackdrop.classList.add('is-open');
+                    if (mobileNavToggle) mobileNavToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeMobileNav() {
+                if (verticalNav && vnavBackdrop) {
+                    verticalNav.classList.remove('is-open');
+                    vnavBackdrop.classList.remove('is-open');
+                    if (mobileNavToggle) mobileNavToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            if (mobileNavToggle) {
+                mobileNavToggle.addEventListener('click', () => {
+                    const isOpen = verticalNav && verticalNav.classList.contains('is-open');
+                    if (isOpen) closeMobileNav(); else openMobileNav();
+                });
+            }
+
+            if (vnavCloseBtn) vnavCloseBtn.addEventListener('click', closeMobileNav);
+            if (vnavBackdrop) vnavBackdrop.addEventListener('click', closeMobileNav);
+
+            // Close drawer when pressing Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && verticalNav && verticalNav.classList.contains('is-open')) {
+                    closeMobileNav();
+                }
+            });
+
+            // Close drawer when clicking any nav link on mobile
+            vnavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) {
+                        closeMobileNav();
+                    }
+                });
+            });
+
+            // --- 3. SCROLL SPY (ACTIVE LINK HIGHLIGHTING VIA INTERSECTION OBSERVER) ---
+            const sectionIds = ['hero', 'about', 'skills', 'timeline', 'projects', 'testimonials', 'chat', 'contact'];
+            const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -65% 0px',
+                threshold: 0
+            };
+
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeId = entry.target.id;
+                        vnavLinks.forEach(link => {
+                            const isCurrent = link.getAttribute('data-section') === activeId;
+                            link.classList.toggle('active', isCurrent);
+                            if (isCurrent) {
+                                link.setAttribute('aria-current', 'page');
+                            } else {
+                                link.removeAttribute('aria-current');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => sectionObserver.observe(section));
+
+            // --- 4. INTERACTIVE TERMINAL CHATBOT ---
+            const chatLog = document.getElementById('terminal-log');
+            const chatForm = document.getElementById('terminal-chat-form');
+            const chatInput = document.getElementById('chat-input-field');
+            const quickChips = document.querySelectorAll('.quick-chip-btn');
+
+            const botResponses = {
+                skills: "D Mani Shashank's skills include: Python, C, Java, HTML, SQL, Arduino, Embedded C, Data Structures & Algorithms, Operating Systems, and OOP.",
+                project: "Featured project: Rain Water Sensor (Arduino, Buzzer, LED, Embedded C) — designed to detect rain levels and trigger automated alerts in real-time.",
+                education: "Shashank is pursuing B.E. in Computer Science & Engineering (Data Science) at Adichunchanagiri Institute of Technology (2025-2029).",
+                contact: "You can email Shashank at dmanishashank@gmail.com, call +91 9964138579, or visit linkedin.com/in/d-mani-shashank-550656374.",
+                default: "Command received! You can ask about my 'skills', 'projects', 'education', or 'contact', or click any prompt chip above."
+            };
+
+            function appendMessage(sender, text) {
+                if (!chatLog) return;
+                const bubble = document.createElement('div');
+                bubble.className = `chat-bubble ${sender}`;
+                bubble.innerHTML = `
+                    <div class="chat-bubble-avatar" aria-hidden="true">${sender === 'bot' ? '👾' : '👤'}</div>
+                    <div class="chat-bubble-msg">${text}</div>
+                `;
+                chatLog.appendChild(bubble);
+                chatLog.scrollTop = chatLog.scrollHeight;
+            }
+
+            function handleUserMessage(msgText) {
+                if (!msgText.trim()) return;
+                appendMessage('user', msgText);
+
+                const lower = msgText.toLowerCase();
+                let reply = botResponses.default;
+                if (lower.includes('skill') || lower.includes('stack') || lower.includes('language')) {
+                    reply = botResponses.skills;
+                } else if (lower.includes('rain') || lower.includes('project') || lower.includes('sensor')) {
+                    reply = botResponses.project;
+                } else if (lower.includes('edu') || lower.includes('college') || lower.includes('study') || lower.includes('degree')) {
+                    reply = botResponses.education;
+                } else if (lower.includes('contact') || lower.includes('email') || lower.includes('phone') || lower.includes('hire')) {
+                    reply = botResponses.contact;
+                }
+
+                setTimeout(() => appendMessage('bot', reply), 350);
+            }
+
+            if (chatForm && chatInput) {
+                chatForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const text = chatInput.value.trim();
+                    if (text) {
+                        handleUserMessage(text);
+                        chatInput.value = '';
+                    }
+                });
+            }
+
+            quickChips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    const msg = chip.getAttribute('data-msg');
+                    if (msg) handleUserMessage(msg);
+                });
+            });
+
+            // --- 5. ABOUT SECTION: AVATAR SWITCHER (8-BIT VS REAL PHOTO) ---
+            const aboutProfileImg = document.getElementById('about-profile-img');
+            const btnPixelAvatar = document.getElementById('btn-pixel-avatar');
+            const btnPhotoAvatar = document.getElementById('btn-photo-avatar');
+
+            if (aboutProfileImg && btnPixelAvatar && btnPhotoAvatar) {
+                btnPixelAvatar.addEventListener('click', () => {
+                    aboutProfileImg.src = './pixel_avatar.jpg';
+                    aboutProfileImg.alt = 'D Mani Shashank Pixel Art Avatar';
+                    aboutProfileImg.classList.remove('photo-mode');
+                    btnPixelAvatar.classList.add('active');
+                    btnPixelAvatar.setAttribute('aria-pressed', 'true');
+                    btnPhotoAvatar.classList.remove('active');
+                    btnPhotoAvatar.setAttribute('aria-pressed', 'false');
+                });
+
+                btnPhotoAvatar.addEventListener('click', () => {
+                    aboutProfileImg.src = './WhatsApp Image 2026-10-07 at 9.51.01 AM.jpeg';
+                    aboutProfileImg.alt = 'D Mani Shashank Real Portrait Photo';
+                    aboutProfileImg.classList.add('photo-mode');
+                    btnPhotoAvatar.classList.add('active');
+                    btnPhotoAvatar.setAttribute('aria-pressed', 'true');
+                    btnPixelAvatar.classList.remove('active');
+                    btnPixelAvatar.setAttribute('aria-pressed', 'false');
+                });
+            }
+
+            // --- 6. SKILLS SECTION: INTERACTIVE CATEGORY FILTERING ---
+            const filterButtons = document.querySelectorAll('.skills-filter-btn');
+            const categoryCards = document.querySelectorAll('.skills-category-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Update active button state
+                    filterButtons.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-pressed', 'false');
+                    });
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-pressed', 'true');
+
+                    // Filter category cards
+                    categoryCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (filter === 'all' || cardCategory === filter) {
+                            card.style.display = 'flex';
+                            card.style.opacity = '1';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // --- 7. TIMELINE SECTION: INTERACTIVE MILESTONE FILTERING ---
+            const timelineFilterBtns = document.querySelectorAll('.timeline-filter-btn');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            timelineFilterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-timeline-filter');
+
+                    // Update active button state
+                    timelineFilterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-pressed', 'false');
+                    });
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-pressed', 'true');
+
+                    // Filter timeline items
+                    timelineItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-timeline-category');
+                        if (filter === 'all' || itemCategory === filter) {
+                            item.style.display = 'flex';
+                            item.style.opacity = '1';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // =========================================================================
+            // --- 8. PROJECTS SECTION: FILTERING & THUMBNAIL-TO-DETAIL LINKAGE ---
+            // =========================================================================
+            /**
+             * EXPLANATION OF HOW EACH THUMBNAIL CONNECTS TO ITS PROJECT DETAIL:
+             * -----------------------------------------------------------------
+             * 1. Data Attribute Relationship:
+             *    Each project card includes a thumbnail wrapper (.project-thumbnail-wrapper),
+             *    a project title (.project-title), and a 'View Details' button (.btn-project-detail).
+             *    All three elements share the attribute:
+             *      [data-project-trigger="<project-id>"] (e.g., 'project-rain-sensor')
+             *    and the accessibility attribute:
+             *      [aria-controls="modal-<project-id>"]
+             *
+             * 2. Targeted Modal Element:
+             *    Each project has a corresponding detailed modal element placed right below
+             *    the thumbnails grid with a matching ID:
+             *      <div class="project-modal-overlay" id="modal-<project-id>">
+             *
+             * 3. Event Listener & Activation:
+             *    When a user clicks any thumbnail or presses Enter/Space while focused on it,
+             *    the openProjectModal(projectId) function is invoked. This function adds the
+             *    '.active' CSS class to the matching '#modal-<project-id>', animating it into view,
+             *    locking body scroll, and moving keyboard focus to the modal's close button.
+             *
+             * 4. Multi-modal Dismissal:
+             *    Clicking the close button, pressing Escape, or clicking the background backdrop
+             *    safely closes the detailed modal view and restores normal page interaction.
+             */
+
+            // 8A. Projects Category Filter Tabs
+            const projectFilterBtns = document.querySelectorAll('.projects-filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            projectFilterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-project-filter');
+
+                    // Update active button state
+                    projectFilterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-pressed', 'false');
+                    });
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-pressed', 'true');
+
+                    // Filter project cards by category
+                    projectCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (filter === 'all' || cardCategory === filter) {
+                            card.style.display = 'flex';
+                            card.style.opacity = '1';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 8B. Clickable Thumbnails to Project Detailed Views
+            const projectModals = document.querySelectorAll('.project-modal-overlay');
+            const projectTriggers = document.querySelectorAll('[data-project-trigger]');
+
+            function openProjectModal(projectId) {
+                const targetModal = document.getElementById(`modal-${projectId}`);
+                if (!targetModal) return;
+
+                // Close any open modal first
+                projectModals.forEach(m => m.classList.remove('active'));
+
+                // Open the selected detailed view
+                targetModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                // Accessibility: Set focus to close button
+                const closeBtn = targetModal.querySelector('.modal-close-btn');
+                if (closeBtn) {
+                    setTimeout(() => closeBtn.focus(), 50);
+                }
+            }
+
+            function closeProjectModal(modal) {
+                if (!modal) return;
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Bind click & keyboard events to each thumbnail trigger
+            projectTriggers.forEach(trigger => {
+                const projectId = trigger.getAttribute('data-project-trigger');
+                if (!projectId) return;
+
+                // Mouse click handler
+                trigger.addEventListener('click', (e) => {
+                    // Prevent default anchor jumping if clicked on trigger
+                    e.preventDefault();
+                    openProjectModal(projectId);
+                });
+
+                // Keyboard handler (Enter / Space for accessibility)
+                trigger.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openProjectModal(projectId);
+                    }
+                });
+            });
+
+            // Modal Dismissal Handlers
+            projectModals.forEach(modal => {
+                // Close button clicks
+                const closeButtons = modal.querySelectorAll('[data-modal-close]');
+                closeButtons.forEach(btn => {
+                    btn.addEventListener('click', () => closeProjectModal(modal));
+                });
+
+                // Backdrop overlay click
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeProjectModal(modal);
+                    }
+                });
+            });
+
+            // Escape key to close any active modal
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    const activeModal = document.querySelector('.project-modal-overlay.active');
+                    if (activeModal) {
+                        closeProjectModal(activeModal);
+                    }
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
